@@ -28,7 +28,7 @@ jobs:
         working-directory: ./vyos-build
         run: |
           sudo make clean
-          sudo ./build-vyos-image --architecture amd64 --build-by vyos-build-action@github.com --build-type release --flavor vyos-iso --version 1.4-rolling-$(date +%Y%m%d%H%M)
+          sudo ./build-vyos-image --architecture amd64 --build-by vyos-build-action@github.com --build-type release --flavor vyos --version 1.4-rolling-$(date +%Y%m%d%H%M)
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
