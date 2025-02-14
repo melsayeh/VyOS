@@ -1,7 +1,7 @@
 name: VyOS v1.4 Rolling Release
 
 on:
-  start:
+  push:
     #- cron: 0 0 * * *
 
 env:
